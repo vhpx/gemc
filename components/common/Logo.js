@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const Logo = () => {
+const Logo = ({ onClick }) => {
   return (
-    <Link href="/">
+    <Link href="/" onClick={onClick}>
       <svg
         width="32"
         height="32"
@@ -10,7 +10,7 @@ const Logo = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_7_46)">
+        <g clipPath="url(#clip0_7_46)">
           <path
             d="M45.7521 4.40566C49.4415 7.38339 52.0002 11.688 52.7325 16.5865C57.0057 14.6552 60 10.3733 60 5.38781V0.00280762L45.7521 4.40566Z"
             fill="white"
