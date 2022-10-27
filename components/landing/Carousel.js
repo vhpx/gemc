@@ -24,13 +24,16 @@ const Carousel = ({ id, reverse = false }) => {
   useEffect(() => {
     if (!id) return;
     document.getElementById("carousel-" + id).style.transform = `translateX(${
-      reverse ? scrollPosition * 0.5 - 400 : scrollPosition * -0.5
+      reverse ? scrollPosition * 0.5 + 600 : scrollPosition * -0.5
     }px)`;
   }, [scrollPosition, id, reverse]);
 
   return (
     <div className="overflow-hidden">
-      <div id={`carousel-${id}`} className="flex gap-4">
+      <div
+        id={`carousel-${id}`}
+        className={`flex gap-4 ${reverse && "flex-row-reverse"}`}
+      >
         <Image
           alt="NFT"
           src="/props/nfts/1.png"
