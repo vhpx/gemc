@@ -1,7 +1,9 @@
 import Button from "../components/common/Button";
+import DiscordBlackIcon from "../components/icons/DiscordBlackIcon";
 import InvertedDiscordIcon from "../components/icons/InvertedDiscordIcon";
 import InvertedInstagramIcon from "../components/icons/InvertedInstagramIcon";
 import InvertedTwitterIcon from "../components/icons/InvertedTwitterIcon";
+import MintIcon from "../components/icons/MintIcon";
 import Carousel from "../components/landing/Carousel";
 import Layout from "../components/layout/Layout";
 
@@ -9,10 +11,10 @@ export default function HomePage() {
   return (
     <>
       <div className="flex flex-col gap-6 justify-center items-center px-4 md:px-8 lg:px-16 py-4">
-        <div className="font-semibold text-3xl text-center">
+        <div className="font-semibold text-xl md:text-3xl text-center">
           GRAND ESCAPE MEMBERS CLUB
         </div>
-        <div className="font-semibold text-black bg-[#ffe817] w-fit px-2 py-1 rounded">
+        <div className="font-semibold text-black bg-[#ffe817] w-fit px-2 py-1 rounded text-center">
           The new #1 Solana NFT Community
         </div>
       </div>
@@ -22,10 +24,10 @@ export default function HomePage() {
         <Carousel id={2} reverse />
       </div>
 
-      <div className="px-4 md:px-8 lg:px-16 mb-32">
-        <div className="grid md:grid-cols-2 items-center justify-center py-8 gap-4 md:gap-8 lg:gap-16">
-          <Button label="Minting soon" />
-          <Button label="Join our Discord" />
+      <div className="px-4 md:px-8 lg:px-16 mb-8 md:mb-16 lg:mb-32">
+        <div className="flex flex-col md:flex-row items-center justify-center py-8 gap-4 md:gap-8 lg:gap-16">
+          <Button label="Minting soon" icon={<MintIcon />} />
+          <Button label="Join our Discord" icon={<DiscordBlackIcon />} />
         </div>
 
         <div className="text-center">

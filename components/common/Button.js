@@ -1,10 +1,11 @@
-const Button = ({ label, onClick }) => {
+const Button = ({ label, onClick, icon }) => {
   return (
     <button
-      className="px-4 py-2 w-full md:w-fit text-black font-semibold bg-gradient-to-r from-blue-400 to-white rounded-lg"
+      className="flex gap-2 justify-center items-center md:text-lg lg:text-xl xl:text-2xl px-8 py-2 w-full md:w-fit text-black font-semibold bg-gradient-to-r from-blue-400 to-white rounded-lg"
       onClick={onClick}
     >
-      {label}
+      {icon}
+      <div>{label}</div>
     </button>
   );
 };
