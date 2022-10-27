@@ -12,11 +12,11 @@ const Navbar = () => {
       <div className="flex gap-16">
         <Logo />
         <div className="flex gap-6 uppercase font-semibold">
-          <Link href="/privacy">The club</Link>
-          <Link href="/terms">Mint a GEMC</Link>
-          <Link href="/terms">Nesting</Link>
-          <Link href="/terms">Blueprint</Link>
-          <Link href="/terms">About us</Link>
+          <Link href="/club">The club</Link>
+          <Link href="/">Mint a GEMC</Link>
+          <Link href="/">Nesting</Link>
+          <Link href="/blueprint">Blueprint</Link>
+          <Link href="/about">About us</Link>
         </div>
       </div>
       <div className="flex gap-6">

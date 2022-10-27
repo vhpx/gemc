@@ -1,27 +1,29 @@
 import Button from "../components/common/Button";
-import DiscordIcon from "../components/icons/DiscordIcon";
-import InstagramIcon from "../components/icons/Instagram";
 import InvertedDiscordIcon from "../components/icons/InvertedDiscordIcon";
 import InvertedInstagramIcon from "../components/icons/InvertedInstagramIcon";
 import InvertedTwitterIcon from "../components/icons/InvertedTwitterIcon";
-import TwitterIcon from "../components/icons/TwitterIcon";
 import Carousel from "../components/landing/Carousel";
 import Layout from "../components/layout/Layout";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <div className="flex flex-col gap-6 justify-center items-center px-16 py-4">
-        <div className="font-semibold text-3xl">GRAND ESCAPE MEMBERS CLUB</div>
+    <>
+      <div className="flex flex-col gap-6 justify-center items-center px-4 md:px-8 lg:px-16 py-4">
+        <div className="font-semibold text-3xl text-center">
+          GRAND ESCAPE MEMBERS CLUB
+        </div>
         <div className="font-semibold text-black bg-[#ffe817] w-fit px-2 py-1 rounded">
           The new #1 Solana NFT Community
         </div>
       </div>
 
-      <Carousel />
+      <div className="my-8 grid gap-4 transform -rotate-3">
+        <Carousel id={1} />
+        <Carousel id={2} reverse />
+      </div>
 
-      <div className="px-16 mb-32">
-        <div className="flex items-center justify-center py-8 gap-16 md:grid-cols-2">
+      <div className="px-4 md:px-8 lg:px-16 mb-32">
+        <div className="grid md:grid-cols-2 items-center justify-center py-8 gap-4 md:gap-8 lg:gap-16">
           <Button label="Minting soon" />
           <Button label="Join our Discord" />
         </div>
@@ -36,7 +38,7 @@ export default function Home() {
           NFT world.
         </div>
 
-        <div className="mt-24 border-y py-12 flex gap-8">
+        <div className="mt-8 md:mt-12 lg:mt-24 border-y py-12 grid md:grid-cols-3 justify-center gap-8">
           <div className="flex flex-col items-center">
             <InvertedTwitterIcon />
             <div className="mt-4 text-center">
@@ -57,10 +59,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
-Home.getLayout = function getLayout(page) {
+HomePage.getLayout = function getLayout(page) {
   return <Layout noPadding>{page}</Layout>;
 };

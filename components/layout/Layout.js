@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children, noPadding }) => {
   return (
-    <div className="bg-black flex flex-col w-full h-screen min-h-screen">
+    <div className="relative bg-black flex flex-col w-full h-screen min-h-screen">
       <Navbar />
       <Content noPadding={noPadding}>{children}</Content>
       <Footer />
