@@ -45,10 +45,10 @@ const Navbar = () => {
           <Link href="/club" onClick={close}>
             The club
           </Link>
-          <Link href="/" onClick={close}>
+          <Link href="#" onClick={close}>
             Mint a GEMC
           </Link>
-          <Link href="/" onClick={close}>
+          <Link href="#" onClick={close}>
             Nesting
           </Link>
           <Link href="/blueprint" onClick={close}>
