@@ -4,7 +4,7 @@ import blueprints from "../data/blueprint";
 
 const BlueprintPage = () => {
   return (
-    <div className="text-center px-4 md:px-8 lg:px-16 py-4">
+    <div className="text-center md:px-8 lg:px-16 py-4">
       <div className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold">
         Blueprint
       </div>
@@ -16,7 +16,7 @@ const BlueprintPage = () => {
         {blueprints.map((bp) => (
           <div
             key={bp.name}
-            className="px-4 py-12 bg-white text-black rounded-lg flex flex-col items-center justify-center"
+            className="px-4 md:px-8 py-12 bg-white text-black rounded-lg flex flex-col items-center justify-center gap-2"
           >
             <Image alt="Blueprint" src={bp.img} width={186} height={186} />
             <div className="font-semibold text-2xl">{bp.name}</div>

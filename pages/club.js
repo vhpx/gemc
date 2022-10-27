@@ -52,7 +52,7 @@ const ClubPage = () => {
             </div>
           </div>
           <div className="relative aspect-square md:w-64 md:h-64 lg:w-80 lg:h-80 order-1 md:order-2">
-            <Image alt="NFT" src="/props/nfts/9.png" fill={true} />
+            <Image alt="NFT" src="/props/nfts/6.png" fill={true} />
           </div>
         </div>
 
